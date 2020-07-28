@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script  type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+  <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+  <h2 class="h-2 mr-md-auto" href="/about" title='Всё про твой любимый город!'><a href="../" style="text-decoration: none;color: #000 !important;">gomel.io</a></h2>
+  <nav class="my-2 my-md-0 mr-md-3">
+
+  </nav>
+  <a class="btn btn-outline-success" href="/about"><b>О нас</b></a>
+</div>
+
+
+
+
+
+{% block body %}
+
+
+{% endblock %}
+
+
+</body>
+</html>
